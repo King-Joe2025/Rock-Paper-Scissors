@@ -12,6 +12,7 @@ const Result=document.querySelector("#lblResult");
 const btnTestRock=document.getElementById("btnRock");
 const playerScore=document.querySelector("#pScore");
 const computerScore=document.querySelector("#cScore");
+let working=false;
 //Variable made to store names from alert() to make a score board
 // let PMove="";
 // let CMove="";
@@ -126,6 +127,7 @@ function restartGame(){
     Player.textContent="Player: ";
     Computer.textContent="Computer: ";
     Result.textContent="WInner is...";
+    working=true;
     },8000)
 }             
             //  display.textContent="GGs";
@@ -143,6 +145,8 @@ function restartGame(){
    // btnScissors.visibility="hidden";
 // }
 btnRock.addEventListener("click",()=>{
+    if (working==true){
+    working=false;
     displayORder();
     setTimeout(()=>{
     display.textContent="VS";
@@ -155,8 +159,10 @@ btnRock.addEventListener("click",()=>{
     restartGame();
  //   btnPaper.visibility="hidden";
    // btnScissors.visibility="hidden";
-});
+}});
 btnPaper.addEventListener("click",()=>{
+    if (working==true){
+        working=false;
     displayORder(); 
     setTimeout(()=>{
         display.textContent="VS";
@@ -169,8 +175,10 @@ btnPaper.addEventListener("click",()=>{
     restartGame();    
  //   btnPaper.visibility="hidden";
    // btnScissors.visibility="hidden";
-});
+}});
 btnScissors.addEventListener("click",()=>{
+    if (working==true){
+        working=false;
     displayORder(); 
     setTimeout(()=>{
         display.textContent="VS";
@@ -182,7 +190,7 @@ btnScissors.addEventListener("click",()=>{
     restartGame();    
  //   btnPaper.visibility="hidden";
    // btnScissors.visibility="hidden";
-});
+}});
 // btnTestRock.click=function (){
 //     displayORder();
 //     display.textContent="VS";
