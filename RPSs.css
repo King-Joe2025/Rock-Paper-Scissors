@@ -1,0 +1,49 @@
+#myTitle{
+    font-size: 40px;
+    text-shadow: 2px saddlebrown;
+    font: bold;   
+}
+.display{
+    font: italic;
+    font-size: 20px;
+    margin:40px;
+}
+#lblPlayer{
+    color: red;
+}
+#lblSusbence{
+    color: green;
+}
+#lblComputer{
+    color: blue;
+}
+#lblResult{
+    font: message-box;
+    font-size: 24px;
+    margin: 120px;
+}
+.Input{
+    margin: 40px;
+    font-size: 16px;
+    font: caption;
+
+}
+#gameScore{
+    margin:80px;
+    background-color: blueviolet;
+    border: 5px solid;
+    border-color: green;
+    width: 200px;
+    height: 25px;
+    text-align: center;
+}
+#pScore{
+    color: red;
+}
+#cScore{
+    color: blue;
+}
+/* #btnRock{
+    visibility: hidden;
+    
+} */
