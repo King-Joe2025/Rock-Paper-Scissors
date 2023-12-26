@@ -12,7 +12,7 @@ const Result=document.querySelector("#lblResult");
 const btnTestRock=document.getElementById("btnRock");
 const playerScore=document.querySelector("#pScore");
 const computerScore=document.querySelector("#cScore");
-let working=false;
+let working=true;
 //Variable made to store names from alert() to make a score board
 // let PMove="";
 // let CMove="";
@@ -145,6 +145,7 @@ function restartGame(){
    // btnScissors.visibility="hidden";
 // }
 btnRock.addEventListener("click",()=>{
+    // alert("Hola");
     if (working==true){
     working=false;
     displayORder();
